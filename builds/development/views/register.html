@@ -3,6 +3,8 @@
 <section class="register-form">
 	<form name="myForm" 
 	ng-submit="register()" novalidate>
+
+	<p class="error formerror" ng-show"message">{{message}}</p>
 		
 		<input type="firstname" name="firstname" placeholder="First Name" autofocus
 		ng-model="user.firstname" ng-required>
@@ -32,7 +34,7 @@
 		ng-show="myForm.password.$invalid && myForm.password.$touched">Password is required</p>
 
 		<button type="submit" class="btn"
-		ng-disabled="myForm.$invalid">Login</button>
+		ng-disabled="myForm.$invalid">Register</button>
 
 		<p>or <a ng-href="#/login">login</a></p>
 		

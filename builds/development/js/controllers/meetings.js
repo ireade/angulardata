@@ -1,6 +1,6 @@
-app.controller('MeetingsController', function($scope, $firebaseArray) {
+app.controller('MeetingsController', function($scope, $firebaseArray, FIREBASE_URL) {
 
-	var ref = new Firebase('https://ireade-angulardata.firebaseio.com/meetings');
+	var ref = new Firebase(FIREBASE_URL+'meetings');
 	$scope.meetings = $firebaseArray(ref);
 	var meetings = $scope.meetings;
 

@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ngRoute', 'firebase', 'appControllers']);
+var app = angular.module('myApp', ['ngRoute', 'firebase', 'appControllers']).constant('FIREBASE_URL', 'https://ireade-angulardata.firebaseio.com/');
 
 var appControllers = angular.module('appControllers', ['firebase']);
 

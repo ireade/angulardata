@@ -3,6 +3,8 @@
 <section class="login-form">
 	<form name="myForm" 
 	ng-submit="login()" novalidate>
+
+		<p class="error formerror" ng-show"message">{{message}}</p>
 		
 		<input type="email" name="email" placeholder="Email" autofocus
 		ng-model="user.email" ng-required>
